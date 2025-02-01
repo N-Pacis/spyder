@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar for WebKit browsers */
+*::-webkit-scrollbar {
+  width: 20px; /* Width of the scrollbar */
+}
+
+/* Racetrack (scrollbar track) */
+*::-webkit-scrollbar-track {
+  background: url('https://www.racetrackwholesale.com/wp-content/uploads/2018/05/SS86_CFDrcoratingRoll_600.1-1-400x500.png') center; /* Your racetrack image */
+  border-radius: 10px; /* Rounded corners for track */
+}
+
+/* Scroll thumb (race car) */
+*::-webkit-scrollbar-thumb {
+  background: url('https://images.vexels.com/content/139450/preview/race-car-speed-racing-d1a210.png') center/contain no-repeat;
+  transform: rotate(270deg); /* Rotate the race car 90 degrees */
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/* Optional: Style for scrollbar buttons */
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Custom Mermaid styling */
+.mermaid {
+  font-family: 'Arial', sans-serif;
+}
+
+.mermaid .node rect {
+  fill: #E0E7FF;
+  stroke: #4F46E5;
+  stroke-width: 2px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.mermaid .node rect:hover {
+  fill: #C7D2FE;
+  stroke-width: 3px;
+}
+
+.mermaid .edgePath path {
+  stroke: #6B7280;
+  stroke-width: 2px;
+}
+
+.mermaid .cluster rect {
+  fill: #F3F4F6;
+  stroke: #D1D5DB;
+  stroke-width: 2px;
+  border-radius: 12px;
+}
+
+.mermaid .label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2937;
+}
+
+.mermaid .arrowheadPath {
+  fill: #6B7280;
+}

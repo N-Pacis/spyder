@@ -1,0 +1,16 @@
+version: '3'
+services:
+  pdf-to-searchable:
+    build: .
+    ports:
+      - "8080:8080"
+    image: pdf-to-searchable:latest
+
+  nginx:
+    image: nginx:alpine
+    depends_on:
+      - pdf-to-searchable
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
